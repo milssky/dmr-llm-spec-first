@@ -1,0 +1,28 @@
+[project]
+name = "petstore-dmr-skeleton"
+version = "0.1.0"
+description = "Django Modern REST transport-layer skeleton generated from OpenAPI 3.1."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "django>=5.2,<6.0",
+  "django-modern-rest[openapi,pydantic,msgspec]",
+  "pydantic>=2.0,<3.0",
+  "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+  "pytest-django>=4.8",
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "server.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.uv.sources]
+django-modern-rest = { git = "https://github.com/wemake-services/django-modern-rest.git" }
