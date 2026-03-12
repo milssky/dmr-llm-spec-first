@@ -1,6 +1,6 @@
 # dmr-openapi-skeleton (Codex Skill)
 
-This repository contains a Codex skill that generates a Django project skeleton using `django-modern-rest` from an OpenAPI specification (`3.1+`).
+This repository contains a Codex skill that generates a Django project skeleton using [django-modern-rest](https://github.com/wemake-services/django-modern-rest) from an OpenAPI specification (`3.1+`).
 
 ## What this skill does
 
